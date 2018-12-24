@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ViewDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/btn_GTP"
+        style="@style/HomeButton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onButtonClicker"
+        android:textSize="10dp"
+        android:text="Go To Progress"
+        android:layout_alignBottom="@+id/ViewDay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/textInputEditTextFood"
+        android:layout_below="@+id/ViewDay" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ViewDay"
+        android:layout_toEndOf="@+id/ViewDay">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginTop="20dp">
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="bottom|left"
+        android:src="@mipmap/microphone"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_CheckFood"
+        android:layout_toStartOf="@+id/btn_CheckFood" />
+
+    <Button
+        android:id="@+id/btn_ScanFood"
+        style="@style/HomeButton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/scan"
+        android:gravity="center"
+        android:onClick="onButtonClicker"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Speak"
+        android:layout_toStartOf="@+id/Speak"
+        android:layout_alignTop="@+id/Speak" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/textInputEditTextFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:hint="@string/hint_food"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_ScanFood"
+        android:layout_toStartOf="@+id/btn_ScanFood" />
+
+    <Button
+        android:id="@+id/btn_CheckFood"
+        style="@style/HomeButton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/add"
+        android:gravity="bottom|right"
+        android:onClick="onButtonClicker"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Speak" />
+
+</RelativeLayout>
