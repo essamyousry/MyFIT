@@ -14,4 +14,4 @@ This is a simple demonstration of how the application works.
 
 ![alt text](https://venus.cs.qc.cuny.edu/~yoes9965/MyFIT1.png)
 
-![alt text](https://venus.cs.qc.cuny.edu/~yoes9965/MyFIT1.png)
+![alt text](https://venus.cs.qc.cuny.edu/~yoes9965/MyFIT2.png)
